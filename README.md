@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quieres ser mi amada esposa y casarnos por esta y mil vidas mas, por vidas infinitas, tener hijos y hacerlos muy feliz?, dame tu corazon y lo cuidare
+    lo sanare y protegere con todas mis fuersas. Te amo tanto que dejaria todo nuetro pasado menos cuando nos conocimos y nos vimos por primeras vez hace ya 9 años
+    esa parte de nuestras vidas yo las rescribiria y haria que estos años separados fueran años donde estuvimos juntos.</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+      font-family: Arial, sans-serif;
+    }
+    #container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    #buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #btnNo {
+      background-color: #f44336;
+    }
+    #btnNo:hover {
+      background-color: #d32f2f;
+    }
+    img {
+      margin-top: 30px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script>
+    function accionParaCuandoEllaDigaQueSi() {
+      alert("¡Ahora ya somos novios! ❤️");
+    }
+
+    function mueveElBoton() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      const newWidth = Math.random() * width;
+      const newHeight = Math.random() * height;
+
+      const btnNo = document.getElementById("btnNo");
+      btnNo.style.position = "absolute";
+      btnNo.style.left = newWidth + "px";
+      btnNo.style.top = newHeight + "px";
+    }
+  </script>
+</head>
+<body>
+    <div id="container">
+      <h1>¿Quieres ser mi novia?</h1>
+      <div id="buttons">
+        <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
+        <button id="btnNo" onmouseover="mueveElBoton()">No</button>
+      </div>
+      <img src="img/2.jpeg" alt="" width="200">
+    </div>
+  
+    <script>
+      function accionParaCuandoEllaDigaQueSi() {
+        const respuesta = confirm("¿Estás segura de querer ser mi novia?");
+        if (respuesta) {
+          // Redireccionar a la nueva página si responde "Sí"
+          window.location.href = "opcionsi.html";
+        } else {
+          alert("Espero que puedas reconsiderarlo 😊");
+        }
+      }
+  
+      function mueveElBoton() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+  
+        const newWidth = Math.random() * width;
+        const newHeight = Math.random() * height;
+  
+        const btnNo = document.getElementById("btnNo");
+        btnNo.style.position = "absolute";
+        btnNo.style.left = newWidth + "px";
+        btnNo.style.top = newHeight + "px";
+      }
+    </script>
+  </body>
+  </html>
+<!---
+RKLGREyy/RKLGREyy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
